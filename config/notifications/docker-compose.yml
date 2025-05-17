@@ -1,0 +1,4 @@
+services:
+  apprise-api:
+
+  gotify:

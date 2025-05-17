@@ -1,7 +1,5 @@
 services:
-  adguard-home:
-
-  uptime-kuma:
+  uptime-kuma: # better uptime/robot?
     image: louislam/uptime-kuma:1
     volumes:
       - ./data:/app/data
@@ -9,3 +7,5 @@ services:
     ports:
       - 3001:3001
     restart: unless-stopped
+
+  auto-kuma:

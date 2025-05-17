@@ -1,0 +1,6 @@
+services:
+  dockge:
+
+  portainer:
+
+  docker-socket-proxy:

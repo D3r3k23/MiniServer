@@ -1,0 +1,29 @@
+name: bookstack
+
+networks:
+  bookstack:
+    name: bookstack
+    driver: bridge
+
+services:
+  app:
+    container_name: bookstack
+    image: bookstack
+    networks:
+      - bookstack
+    depends_on:
+      - db
+
+  db:
+    container_name: mariadb-bookstack
+    image: mariadb
+    networks:
+      - bookstack
+
+  api:
+    container_name: bookstack-api
+    image: bookstack-gethomepage-api
+    networks:
+      - bookstack
+    depends_on:
+      - app

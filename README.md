@@ -1,3 +1,3 @@
-# Pi-Server
+# MiniServer
 
-Raspberry Pi homelab server configuration
+MiniServer homelab configuration
