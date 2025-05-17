@@ -6,5 +6,6 @@ include:
   - prometheus/docker-compose.yml
   - beszel/docker-compose.yml
   - speedtest-tracker/docker-compose.yml
+  - homepage/docker-compose.yml
   - utilities/docker-compose.yml
   - bookstack/docker-compose.yml
