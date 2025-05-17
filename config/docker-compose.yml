@@ -3,6 +3,8 @@ include:
   - uptime-kuma/docker-compose.yml
   - networking/docker-compose.yml
   - notifications/docker-compose.yml
+  - prometheus/docker-compose.yml
   - beszel/docker-compose.yml
+  - speedtest-tracker/docker-compose.yml
   - utilities/docker-compose.yml
   - bookstack/docker-compose.yml
