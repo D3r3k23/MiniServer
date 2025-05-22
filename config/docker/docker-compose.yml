@@ -4,3 +4,5 @@ services:
   portainer:
 
   docker-socket-proxy:
+
+  watchtower:

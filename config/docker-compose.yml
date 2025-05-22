@@ -1,11 +1,9 @@
 include:
-  - docker/docker-compose.yml
-  - uptime-kuma/docker-compose.yml
-  - networking/docker-compose.yml
-  - notifications/docker-compose.yml
-  - prometheus/docker-compose.yml
-  - beszel/docker-compose.yml
-  - speedtest-tracker/docker-compose.yml
-  - homepage/docker-compose.yml
+  # - docker/docker-compose.yml
+  # - networking/docker-compose.yml
+  # - notifications/docker-compose.yml
+  # - monitoring/docker-compose.yml
+  # - homepage/docker-compose.yml
   - utilities/docker-compose.yml
-  - bookstack/docker-compose.yml
+  # - backup/docker-compose.yml
+  # - docs/docker-compose.yml

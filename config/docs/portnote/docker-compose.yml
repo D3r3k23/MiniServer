@@ -1,0 +1,49 @@
+name: portnote
+
+networks:
+  portnote:
+    name: portnote
+    driver: bridge
+
+services:
+  app:
+    container_name: portnote
+    image: haedlessdev/portnote:latest
+    networks:
+      - portnote
+    ports:
+      - 3000:3000
+    environment:
+      JWT_SECRET: RANDOM_SECRET # Replace with a secure random string
+      USER_SECRET: RANDOM_SECRET # Replace with a secure random string
+      LOGIN_USERNAME: username # Replace with a username
+      LOGIN_PASSWORD: mypassword # Replace with a custom password
+      DATABASE_URL: "postgresql://postgres:postgres@db:5432/postgres"
+    depends_on:
+      db:
+        condition: service_started
+
+  agent:
+    container_name: portnote-agent
+    image: haedlessdev/portnote-agent:latest
+    networks:
+      - portnote
+    environment:
+      DATABASE_URL: "postgresql://postgres:postgres@db:5432/postgres"
+    depends_on:
+      db:
+        condition: service_started
+
+  db:
+    container_name: postgres-portnote
+    image: postgres:17
+    networks:
+      - portnote
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+    volumes:
+      - ./appdata/portnote/postgres:/var/lib/postgresql/data
+    restart:
+      always

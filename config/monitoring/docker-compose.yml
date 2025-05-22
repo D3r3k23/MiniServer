@@ -1,0 +1,9 @@
+include:
+  - uptime-kuma/docker-compose.yml
+  - beszel/docker-compose.yml
+  - prometheus/docker-compose.yml
+
+services:
+  scrutiny:
+
+  speedtest-tracker:

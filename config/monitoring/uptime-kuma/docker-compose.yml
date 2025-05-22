@@ -1,0 +1,23 @@
+services:
+  uptime-kuma: # better uptime/robot?
+    container_name: uptime-kuma
+    image: louislam/uptime-kuma:1
+    volumes:
+      - ${UPTIME_KUMA_CONFIG}:/app/data
+      - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+      - 3001:3001
+    restart: unless-stopped
+
+  # db: # 2.0
+  #   container_name: postgres-uptime-kuma
+
+  auto-kuma:
+    container_name: auto-kuma
+    image: ghcr.io/bigboot/autokuma:latest
+    volumes:
+      - ${AUTO_KUMA_CONFIG}:/data
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      AUTOKUMA__KUMA__URL: http://localhost:3001
+    restart: unless-stopped

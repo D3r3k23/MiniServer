@@ -1,2 +1,4 @@
 services:
   homepage:
+    container_name: homepage
+    image: homepage
