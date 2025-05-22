@@ -6,8 +6,8 @@ services:
       - 8443:8443
     volumes:
       - /etc/localtime:/etc/localtime:ro
-      - ./appdata/config:/config
-      - .:/home
+      - ${APPDATA}/code-server/config:/config
+      - ${MINI_SERVER}:/home
     environment:
       PUID: 1000
       PGID: 1000
