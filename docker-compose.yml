@@ -1,9 +1,9 @@
 include:
-  # - docker/docker-compose.yml
-  # - networking/docker-compose.yml
-  # - notifications/docker-compose.yml
-  # - monitoring/docker-compose.yml
-  # - homepage/docker-compose.yml
-  - utilities/docker-compose.yml
-  # - backup/docker-compose.yml
-  # - docs/docker-compose.yml
+  # - config/docker/docker-compose.yml
+  # - config/networking/docker-compose.yml
+  # - config/notifications/docker-compose.yml
+  # - config/monitoring/docker-compose.yml
+  # - config/homepage/docker-compose.yml
+  - config/utilities/docker-compose.yml
+  # - config/backup/docker-compose.yml
+  # - config/docs/docker-compose.yml
