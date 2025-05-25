@@ -10,8 +10,8 @@
             widget:
                 type: proxmox
                 url: https://192.168.50.28:8006
-                username: api@pam!homepage
-                password: 46953c8c-23b6-4ab6-823c-078b88e1f858
+                username: {{HOMEPAGE_VAR_PROXMOX_API_ID}}
+                password: {{HOMEPAGE_VAR_PROXMOX_API_KEY}}
                 node: miniserver
         - Uptime Kuma:
             server: docker
@@ -33,7 +33,7 @@
                 type: speedtest
                 url: http://192.168.50.128:8050
                 version: 2
-                key: 0UhIHKMzMDpDFcD1ldrEcxiSJtbdxXuUSf09IrWn1ddfe1e0
+                key: {{HOMEPAGE_VAR_SPEEDTEST_TRACKER_API_KEY}}
                 bitratePrecision: 0
         - Scrutiny:
             server: docker

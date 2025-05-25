@@ -36,7 +36,3 @@ layout:
   Tab 4:
     header: false
     Networking:
-    
-providers:
-  openweathermap: openweathermapapikey
-  weatherapi: weatherapiapikey

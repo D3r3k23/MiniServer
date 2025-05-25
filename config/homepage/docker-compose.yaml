@@ -10,3 +10,4 @@ services:
       HOMEPAGE_ALLOWED_HOSTS: ${HOSTNAME}:${HOMEPAGE_PORT}
       PUID: ${PUID}
       PGID: ${PGID}
+    env_file: .secrets.env
