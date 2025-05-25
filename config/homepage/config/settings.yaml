@@ -1,0 +1,42 @@
+---
+
+base: http://192.168.50.128:4000
+
+title: MiniServer
+description: Homepage for MiniServer
+
+showStats: false
+hideErrors: false
+hideVersion: true
+fullWidth: false
+maxGroupColumns: 4
+useEqualHeights: false
+
+theme: dark
+color: slate
+headerStyle: underlined
+statusStyle: basic
+
+quicklaunch:
+  searchDescriptions: true
+  hideInternetSearch: true
+  showSearchSuggestions: true
+  hideVisitURL: true
+
+layout:
+  Tab 1:
+    header: false
+    Monitoring:
+    Notifications:
+  Tab 2:
+    header: false
+    Utilities:
+  Tab 3:
+    header: false
+  Tab 4:
+    header: false
+    Networking:
+    
+providers:
+  openweathermap: openweathermapapikey
+  weatherapi: weatherapiapikey

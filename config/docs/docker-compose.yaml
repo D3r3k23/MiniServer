@@ -1,0 +1,3 @@
+include:
+  - bookstack/docker-compose.yaml
+  - portnote/docker-compose.yaml

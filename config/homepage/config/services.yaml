@@ -1,0 +1,106 @@
+---
+
+- Tab 1:
+    - Monitoring:
+        - Proxmox:
+            siteMonitor: https://192.168.50.28:8006
+            icon: proxmox.png
+            href: https://192.168.50.28:8006
+            description: MiniServer
+            widget:
+                type: proxmox
+                url: https://192.168.50.28:8006
+                username: api@pam!homepage
+                password: 46953c8c-23b6-4ab6-823c-078b88e1f858
+                node: miniserver
+        - Uptime Kuma:
+            server: docker
+            container: uptime-kuma
+            icon: uptime-kuma.png
+            href: http://192.168.50.128:3001/status/server
+            description: Uptime Monitoring
+            widget:
+                type: uptimekuma
+                url: http://192.168.50.128:3001
+                slug: server
+        - Speedtest Tracker:
+            server: docker
+            container: speedtest-tracker
+            icon: speedtest-tracker.png
+            href: http://192.168.50.128:8050/admin
+            description: Network Speed Monitoring
+            widget:
+                type: speedtest
+                url: http://192.168.50.128:8050
+                version: 2
+                key: 0UhIHKMzMDpDFcD1ldrEcxiSJtbdxXuUSf09IrWn1ddfe1e0
+                bitratePrecision: 0
+        - Scrutiny:
+            server: docker
+            container: scrutiny
+            icon: scrutiny.png
+            href: http://192.168.50.128:8070
+            description: Hard Drive Monitoring
+            widget:
+                type: scrutiny
+                url: http://192.168.50.128:8070
+
+    - Notifications:
+        - Gotify:
+            server: docker
+            container: gotify
+            icon: gotify.png
+            description: Notification Server
+        - Apprise:
+            server: docker
+            container: apprise-api
+            icon: apprise.png
+            description: Notification API
+
+# - Tab 2:
+    # - Utilities:
+        # - Beszel:
+        #     server: docker
+        #     container: beszel
+        #     icon: beszel.png
+        #     href: http://192.168.50.128:8090/system/MiniServer
+        #     description: System Monitoring
+        # - Code Server:
+        #     server: docker
+        #     container: code-server
+        #     icon: code-server.png
+        #     href: http://192.168.50.128:8500
+        #     description: Visual Studio Code
+        # - Dozzle:
+        #     server: docker
+        #     container: dozzle
+        #     icon: dozzle.png
+        #     href: http://192.168.50.128:8080
+        #     description: Docker Log Viewer
+        # - File Browser:
+        #     server: docker
+        #     container: file-browser
+        #     icon: filebrowser.png
+        #     href: http://192.168.50.128:7080/files/mini-server
+        #     description: File Manager
+        # - Glances:
+        #     server: docker
+        #     container: glances
+        #     icon: glances.png
+        #     href: http://192.168.50.128:61208
+        #     description: Server Monitoring
+
+- Tab 3:
+    - Tab 3:    
+        - Service:
+            href: http://localhost
+            description: Homepage is the best
+
+- Tab 4:
+    - Networking:
+        - Service:
+            href: http://localhost
+            description: Homepage is the best
+        - Service:
+            href: http://localhost
+            description: Homepage is 😎

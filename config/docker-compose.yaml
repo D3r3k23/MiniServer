@@ -1,0 +1,9 @@
+include:
+  - docker/docker-compose.yaml
+  # - networking/docker-compose.yaml
+  # - notifications/docker-compose.yaml
+  - monitoring/docker-compose.yaml
+  - homepage/docker-compose.yaml
+  - utilities/docker-compose.yaml
+  # - backup/docker-compose.yaml
+  # - docs/docker-compose.yaml

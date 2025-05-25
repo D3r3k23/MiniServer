@@ -1,9 +1,0 @@
-include:
-  # - config/docker/docker-compose.yml
-  # - config/networking/docker-compose.yml
-  # - config/notifications/docker-compose.yml
-  # - config/monitoring/docker-compose.yml
-  # - config/homepage/docker-compose.yml
-  - config/utilities/docker-compose.yml
-  # - config/backup/docker-compose.yml
-  # - config/docs/docker-compose.yml

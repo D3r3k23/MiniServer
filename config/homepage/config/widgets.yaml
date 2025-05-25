@@ -1,0 +1,23 @@
+---
+
+- logo:
+    icon: proxmox.png
+    href: https://192.168.50.28:8006
+
+- resources:
+    cpu: true
+    memory: true
+    disk: /
+
+- datetime:
+    text_size: md
+    format:
+        dateStyle: long
+        timeStyle: short
+
+- openmeteo:
+    label: Current
+    latitude: 43.5815
+    longitude: -116.175
+    timezone: America/Boise
+    cache: 5
